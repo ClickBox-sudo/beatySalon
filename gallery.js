@@ -15,20 +15,37 @@ var facialGallery = [
 ];
 
 var makeupGallery = [
-   'images/makeup/1.jpeg',
-   'images/makeup/2.jpeg',
-   'images/makeup/3.jpeg',
-   'images/makeup/4.jpeg' 
+    'images/makeup/1.jpeg',
+    'images/makeup/2.jpeg',
+    'images/makeup/3.jpeg',
+    'images/makeup/4.jpeg'
 ];
 
 var waxingGallery = [
     'images/waxing/1.jpg',
     'images/waxing/2.jpg',
     'images/waxing/3.jpg',
-]
+];
 
 var massageGallery = [
     'images/massage/1.jpeg',
     'images/massage/2.jpeg',
     'images/massage/3.jpg',
-]
+];
+
+
+
+var galleryArray = hairstyleGallery.concat(makeupGallery, facialGallery, waxingGallery, massageGallery)
+
+function gallery() {
+    var overlay = $('<div>').attr('class', 'overlay');
+    for (var i = 0; i < galleryArray.length; i++) {
+        var imageHolder = $('<div>').attr('class', 'imageHolder wrapper');
+        imageHolder.append($('<img>').attr('src', galleryArray[i]));
+        $(overlay).append(imageHolder);
+    };
+    
+    $('#gallery').append(overlay);
+}
+
+

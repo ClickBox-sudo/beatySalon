@@ -1,3 +1,4 @@
+gallery();
 $(document).ready(function () {
     function menu() {
         if ($(".menu #bars").css('display') != 'none') {
@@ -42,7 +43,12 @@ $(document).ready(function () {
 
 
 
+
+
     
+
+
+
 });
 
 
