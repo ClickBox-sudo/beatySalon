@@ -120,13 +120,15 @@ ul{
 }
 .service-item{
     display: none;
+}
+.service-item,.price-content{
     margin-top: 15px;
     padding: 15px 0;
-    box-shadow:2px 2px 2px 0 #f6f3ec;
+    box-shadow:2px 2px 2px 0 #e4e3e2;
+    color: #686663;
 }
 .service-item h2{
     font-size: 20px;
-    position: relative;
 }
 .section-title{
     margin-top: 25px;
@@ -141,7 +143,7 @@ ul{
     height:5px;
     background-color:#D30050;
 }
-.service-item h2,.service-item p{
+.service-item h2,.service-item p,.price-content h2, .price-content p{
     margin-bottom: 8px;
 }
 .service-list-button{
@@ -154,7 +156,17 @@ ul{
     outline: none;
     box-shadow: 2px 2px 2px 2px rgb(248, 190, 212);
 }
-
+.btn-default{
+    margin: 20px 0;
+}
+.btn-default a{
+    padding: 10px 15px;
+    background-color: yellowgreen;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: 800;
+    color: #f6f3ec;
+}
 .img-sign{
     width: 150px;
     height:50px;
@@ -238,7 +250,18 @@ img{
     padding: 3px;
     border-radius: 5px;
 }
-
+#pricing{
+    display: none;
+}
+.price-content ul{
+    margin-top: 20px;
+}
+.price-content ul li{
+    padding: 5px 0;
+}
+.price-content span{
+    color: #D30050;
+}
 
 @media screen and (min-width:768px)  {
     .grey{

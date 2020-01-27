@@ -26,18 +26,17 @@ $(document).ready(function () {
     }
     toggleServiceList();
 
-
-
     var service = $('.service-link');
     $(service).on('click', (event) => {
+
         var targetID = $(event.target).text().toLowerCase();
-        var sectionListInMain = $('.main section');
-        for (var i = 0; i < sectionListInMain.length; i++) {
-            var match = $(sectionListInMain[i]).attr('id');
-            console.log('#'+match)
-            match == targetID ?  $('#'+match).css({'display':'block'}): $('#'+match).css({'display':'none'})
+        if (targetID != 'contact') {
+            var sectionListInMain = $('.main section');
+            for (var i = 0; i < sectionListInMain.length; i++) {
+                var match = $(sectionListInMain[i]).attr('id');
+                match == targetID ? $('#' + match).css({ 'display': 'block' }) : $('#' + match).css({ 'display': 'none' })
+            }
         }
-        
     });
 });
 
