@@ -39,17 +39,25 @@ $(document).ready(function () {
             }
         }
     });
+    var colorCode = "#D32D27"
+    $('.appointment').velocity({
+        opacity: 0.8,
+        backgroundColor: colorCode,
+    },
+    {
+        duration: 1000,
+        delay: 0,
+        easing: "linear",
+        loop: true
+    });
 
 
-
-
-
-
-    
 
 
 
 });
+
+
 
 
 

@@ -265,12 +265,7 @@ img{
 #gallery{
     display: none;
 }
-.overlay{
-    width: 100%;
-    height: 100%;
-}
 .imageHolder  {
-    
     width: 200px;
     height: 200px;
     margin: 10px auto;
@@ -279,24 +274,120 @@ img{
 
 
 @media screen and (min-width:768px)  {
+    .header{
+        justify-content: flex-start;
+    }
+    .logo{
+        margin-left: 0;
+
+    }
+    .appointment{
+        visibility: visible;
+        background-color:#9acd32;
+        padding: 10px 15px;
+        margin-right: 0;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .appointment a{
+        color: #f5f3f0;
+        font-weight: 600;
+
+    }
+    #service,#pricing,#gallery{
+        display: block;
+    }
+    .label{
+        display: none;
+    }
+    .menu{
+        background-color: #D30050;
+    }
+    .menu-list {
+        position: relative;
+        background-color: transparent;
+        top: 0;       
+        display: flex;
+        flex-flow: row;
+        height: 70px;
+        width: 80%;
+        align-items:flex-end ;
+        padding: 0;
+    }
+    .menu-list a{
+        color: #e4e3e2;
+
+    }
     .grey{
         background-color: #f6f3ec;
     }
+    .welcome{
+        display: none;
+    }
     .banner{
         background-image: url("images/2.jpg");
-        height: 400px;
+        height: 450px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
     }
+    .title{
+        padding-top: 100px;
+        flex-flow: row;
+    }
+    .box50{
+        flex-basis: 50%;
+        margin-left: 0;
+    }
     .title a{
         display: block;
-        margin-top: 15px;
+        margin-top: 35px;
         margin-left: 40px;
-        padding: 10px;
-        background-color: rgba(107, 250, 250, 0.692);
-       border-radius: 10px;
+        padding: 8px 0;
+        background: linear-gradient(144deg, #D30050 0%, #6bfafab0 100%);
+        border-radius: 10px;
+        width: 170px;
+        text-align: center;
+        color: #383838;
+        text-transform: capitalize;
+
     }
+    .section-title::before{
+        display: none;
+    }
+    .footer-menu-list{
+        display: block;
+    }
+      
+    .section-title{
+        display: block;
+        padding: 50px 0;
+    }
+    .img-sign{
+        height: auto;
+    }
+    .service-list-button{
+        margin-top: 30px;
+    }
+    .flex-desktop{
+        display: flex;
+
+    }
+    .price-content,.service-item{
+        margin:30px 20px;
+        padding: 10px;
+        box-shadow: 5px 5px 5px 5px #686663;
+    }
+    .prelay{
+        display: flex;
+        flex-flow: row;
+        flex-wrap: nowrap;
+    }
+    .imageHolder{
+        margin: 0 20px;
+        width: 30%;
+    }
+   
     
     
 }

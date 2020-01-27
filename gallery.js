@@ -38,13 +38,13 @@ var massageGallery = [
 var galleryArray = hairstyleGallery.concat(makeupGallery, facialGallery, waxingGallery, massageGallery)
 
 function gallery() {
-    var overlay = $('<div>').attr('class', 'overlay');
+    var overlay = $('<div>').attr('class', 'prelayImage');
     for (var i = 0; i < galleryArray.length; i++) {
         var imageHolder = $('<div>').attr('class', 'imageHolder wrapper');
         imageHolder.append($('<img>').attr('src', galleryArray[i]));
         $(overlay).append(imageHolder);
     };
-    
+
     $('#gallery').append(overlay);
 }
 
