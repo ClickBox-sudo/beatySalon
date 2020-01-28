@@ -44,12 +44,14 @@ function gallery() {
     };
     var popupImgDiv = $('<div>').attr('class', 'popupImgDiv');
     var previousDiv = $('<div>').attr('class', 'previousDiv');
-    var previousArrow = $('<p>').attr('class', 'previousArrow').html('<i class="fas fa-caret-left"></i>');
+    var previousArrow = $('<p>').attr('class', 'previousArrow').html('<i class="fas fa-chevron-left"></i>');
     var nextDiv = $('<div>').attr('class', 'nextDiv');
-    var nextArrow = $('<p>').attr('class', 'nextArrow').html('<i class="fas fa-caret-right"></i>');
+    var nextArrow = $('<p>').attr('class', 'nextArrow').html('<i class="fas fa-chevron-right"></i>');
+    var exit = $('<p>').attr('class','exit').html('<i class="far fa-times-circle"></i>')
     var popUpImg = $('<img>');
 
     $(popupImgDiv).append(previousDiv);
+    $(popupImgDiv).append(exit);
     $(previousDiv).append(previousArrow);
 
     $(popupImgDiv).append(popUpImg);
@@ -94,6 +96,9 @@ function gallery() {
         })
     }
     popUp();
+    $('.exit').on('click',()=>{
+        $('.popupImgDiv').css('display','none')
+    })
 }
 
 

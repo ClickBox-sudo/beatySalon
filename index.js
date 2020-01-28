@@ -1,4 +1,3 @@
-gallery();
 $(document).ready(function () {
     var w = window.innerWidth;
     var h = window.innerHeight;
@@ -23,12 +22,12 @@ $(document).ready(function () {
         }
         menu();
 
+        
 
-
-
+        
         var service = $('.service-link');
         $(service).on('click', (event) => {
-
+            
             var targetID = $(event.target).text().toLowerCase();
             if (targetID != 'contact') {
                 var sectionListInMain = $('.main section');
@@ -39,9 +38,9 @@ $(document).ready(function () {
             }
         });
     }
-
-
-
+    
+    
+    
     
     function toggleServiceList() {
         $(".service-list-button").click(function () {
@@ -49,25 +48,26 @@ $(document).ready(function () {
         });
     }
     toggleServiceList();
-
+    
     var colorCode = "#D32D27"
     $('.appointment').velocity({
         opacity: 0.8,
         backgroundColor: colorCode,
     },
-        {
-            duration: 1000,
-            delay: 0,
-            easing: "linear",
-            loop: true
-        });
-
-
-
-
-
-
-
+    {
+        duration: 1000,
+        delay: 0,
+        easing: "linear",
+        loop: true
+    });
+    gallery();
+    
+    
+    
+    
+    
+    
+    
 
 });
 
