@@ -29,7 +29,6 @@ var massageGallery = [
     'https://raw.githubusercontent.com/ClickBox-sudo/beatySalon/master/images/massage/1.jpeg',
     'https://raw.githubusercontent.com/ClickBox-sudo/beatySalon/master/images/massage/2.jpeg',
     'https://raw.githubusercontent.com/ClickBox-sudo/beatySalon/master/images/massage/3.jpg',
-
 ];
 
 
