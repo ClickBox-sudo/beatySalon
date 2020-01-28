@@ -40,7 +40,7 @@ var galleryArray = hairstyleGallery.concat(makeupGallery, facialGallery, waxingG
 function gallery() {
     var overlay = $('<div>').attr('class', 'prelayImage');
     for (var i = 0; i < galleryArray.length; i++) {
-        var imageHolder = $('<div>').attr('class', 'imageHolder wrapper');
+        var imageHolder = $('<div>').attr('class', 'imageHolder');
         imageHolder.append($('<img>').attr('src', galleryArray[i]));
         $(overlay).append(imageHolder);
     };

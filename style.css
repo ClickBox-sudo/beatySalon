@@ -55,7 +55,7 @@ ul{
 }
 .menu-list{
     position: absolute;
-    top:120px;
+    top:115px;
     left: 0px;
     right: 0;
     margin: 0 auto;
@@ -156,6 +156,7 @@ ul{
     outline: none;
     box-shadow: 2px 2px 2px 2px rgb(248, 190, 212);
 }
+
 .btn-default{
     margin: 20px 0;
 }
@@ -194,6 +195,11 @@ footer a,footer h2,footer p,footer span{
     font-size: 20px;
     padding: 10px;
     border-radius: 20px;
+}
+footer h3{
+    color: #f6f3ec;
+    margin-bottom: 25px;
+    font-family: 'Libre Baskerville';
 }
 .contact-info i{
     color: #D30050;
@@ -253,8 +259,10 @@ img{
 #pricing{
     display: none;
 }
+
 .price-content ul{
     margin-top: 20px;
+   
 }
 .price-content ul li{
     padding: 5px 0;
@@ -269,6 +277,14 @@ img{
     width: 200px;
     height: 200px;
     margin: 10px auto;
+}
+.footer-flex{
+    display: flex;
+    flex-flow: wrap;
+    width: 80%;
+}
+footer h3{
+    display: none;
 }
 
 
@@ -371,21 +387,71 @@ img{
     }
     .flex-desktop{
         display: flex;
-
+        flex-flow: row wrap;
     }
     .price-content,.service-item{
         margin:30px 20px;
         padding: 10px;
         box-shadow: 5px 5px 5px 5px #686663;
     }
-    .prelay{
+    .price-content{
         display: flex;
-        flex-flow: row;
-        flex-wrap: nowrap;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 20%;
+        margin: 0 auto;
+    }
+    .prelayImage{
+        display: flex;
+        flex-flow: row wrap;
     }
     .imageHolder{
-        margin: 0 20px;
-        width: 30%;
+        margin:8px;
+        flex-basis: 12%;
+    }
+    .info{
+        display: block;
+    }
+    .fonts{
+        flex-direction: row;
+    }
+    .fonts i{
+        font-size: 45px;
+
+    }
+    footer .logo{
+        width: 220px;
+        height: 100px;
+        margin-bottom: 35px;
+
+    }
+    .footer-flex{
+        width: 100%;
+        margin-top: 35px;
+    }
+    .contact-info-item::after{
+        display: none;
+    }
+    .contact-info-item{
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    footer h3{
+        display: block;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    .footer-menu-list li{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    .footer-menu-list li a:hover{
+        color: #D30050;
+
+    }
+    .footer-menu-list li i{
+        color: #D30050;
     }
    
     
